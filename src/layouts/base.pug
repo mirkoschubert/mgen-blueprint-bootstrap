@@ -1,0 +1,28 @@
+doctype html
+html(lang=site.language)
+  head
+    base(href=site.url)
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title= site.title
+    meta(name='description', content=page.description? page.description : site.description)
+    meta(name='keywords', content=page.keywords? page.keywords : site.keywords)
+
+    link(rel='alternative', type='application/rss+xml', href=site.rss, title=site.title)
+    link(rel='canonical', href=page.permalink)
+
+    include components/meta/styles
+    include components/meta/scripts
+  body(class=page.bodyclass)
+    block header
+      include components/site/header
+      
+    block main
+      include components/site/main
+
+    block footer
+      include components/site/footer
+
+  include components/meta/footer-scripts
+   
