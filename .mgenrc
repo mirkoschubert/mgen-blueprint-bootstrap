@@ -1,0 +1,22 @@
+site:
+  title: Bootstrap blueprint for mgen
+  description: A Bootstrap blueprint for mgen
+  keywords: mgen, static, site, generator, bootstrap, blueprint, boilerplate
+  language: en
+  url: http://localhost:3000
+
+menues:
+  main:
+    - name: Home
+      permalink: /
+      weight: 1
+      key: h
+  footer:
+    - name: Imprint
+      permalink: imprint
+      weight: 1
+      key: i
+    - name: Privacy
+      permalink: privacy
+      weight: 2
+      key: p
